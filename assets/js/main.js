@@ -16,3 +16,15 @@ darkModeToggle.addEventListener("click", function () {
     }
   });
 });
+
+/* -------------------------------------------------------------------------- */
+/*                               Hamburger-menu                               */
+/* -------------------------------------------------------------------------- */
+
+const hamburger = document.querySelector(".hamburger");
+const secHeaderLeft = document.querySelector(".sec-header-left");
+
+hamburger.addEventListener("click", function () {
+  this.classList.toggle("show");
+  secHeaderLeft.classList.toggle("show");
+});
