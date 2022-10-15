@@ -84,12 +84,13 @@ header h1 {
   background-color: black;
   color: white;
 }
-i > span {
+#dark-mode-toggle {
+  font-size: 3rem;
+}
+#dark-mode-name {
   /* outline: 1px solid red; */
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-family: tiempos-headline;
-  margin-left: 1rem;
-  margin-top: -5rem;
 }
 
 /* -------------------------------------------------------------------------- */
