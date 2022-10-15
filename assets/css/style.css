@@ -1,0 +1,294 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  /* changes a default 16px font size to 10px */
+}
+
+@font-face {
+  font-family: graphik-medium;
+  src: url("../fonts/Graphik-Medium.ttf");
+}
+@font-face {
+  font-family: graphik-regular;
+  src: url("../fonts/Graphik-Regular.woff");
+}
+@font-face {
+  font-family: theinhardt;
+  src: url("../fonts/Theinhardt-Lt.woff");
+}
+@font-face {
+  font-family: tiempos-headline;
+  src: url("../fonts/TiemposHeadline-Semibold.woff");
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   header                                   */
+/* -------------------------------------------------------------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 15rem;
+  margin-bottom: 10rem;
+}
+/* .hamburger {
+  display: none;
+} */
+/* .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+} */
+nav {
+  font-family: graphik-regular;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2.5rem;
+  font-size: 2rem;
+}
+nav ul li a,
+.sec-header-right a {
+  text-decoration: none;
+  color: black;
+}
+header h1 {
+  font-size: 3.5rem;
+  font-family: tiempos-headline;
+}
+.sec-header-right a {
+  font-family: graphik-medium;
+  font-size: 2rem;
+  padding: 0.5rem 4rem;
+  border: 0.2rem solid black;
+  border-radius: 0.5rem;
+}
+.sec-header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sec-header-right a:hover {
+  background-color: black;
+  color: white;
+}
+i > span {
+  /* outline: 1px solid red; */
+  font-size: 1.2rem;
+  font-family: tiempos-headline;
+  margin-left: 1rem;
+  margin-top: -5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    main                                    */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------- main-sec01 ------------------------------- */
+
+.main-sec01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: graphik-regular;
+  margin-bottom: 15rem;
+}
+.main-sec01 h2 {
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+}
+.main-sec01 img {
+  max-width: 100vw;
+  height: auto;
+}
+
+/* ------------------------------- main-sec02 ------------------------------- */
+
+.main-sec02 {
+  display: flex;
+  gap: 10rem;
+  padding: 0rem 15rem;
+  margin-bottom: 15rem;
+}
+
+.main-sec02 article.left {
+  max-width: 50vw;
+  font-family: graphik-medium;
+  font-size: 2.2rem;
+  line-height: 2em;
+}
+.main-sec02 article.right h3 {
+  font-family: graphik-regular;
+  font-size: 5.5rem;
+  line-height: 2em;
+  letter-spacing: 0.5rem;
+}
+.main-sec02 article.right p {
+  font-family: theinhardt;
+  font-size: 1.5rem;
+  line-height: 1.4em;
+  color: gray;
+}
+/* i {
+  font-size: 5rem;
+} */
+
+/* ------------------------------- main-sec03 ------------------------------- */
+
+.main-sec03 {
+  display: flex;
+  gap: 4rem;
+  padding: 0rem 15rem;
+  margin-bottom: 15rem;
+}
+.main-sec03 .sec03-img {
+  width: 40vw;
+  height: auto;
+}
+.main-sec03 .sec03-article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5rem;
+}
+h3 {
+  font-family: tiempos-headline;
+  font-size: 5rem;
+}
+.sec03-article div h4 {
+  font-family: graphik-medium;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.sec03-article div p {
+  padding-right: 10rem;
+  font-family: theinhardt;
+  font-size: 2rem;
+  line-height: 1.6em;
+  color: gray;
+}
+
+/* ------------------------------- main-sec04 ------------------------------- */
+
+.main-sec04 {
+  display: flex;
+  gap: 5rem;
+  margin: 0rem 15rem 15rem 15rem;
+  padding: 0rem 5rem 0rem 5rem;
+  background-color: rgb(225, 225, 225);
+}
+.sec04-left-article {
+  width: 50vw;
+  padding-top: 7rem;
+}
+.sec04-left-article ol {
+  /* border: 2px solid red; */
+  font-family: theinhardt;
+  margin: 2rem 0rem 2rem 4rem;
+  padding-right: 2rem;
+  font-size: 2rem;
+  line-height: 1.6em;
+  color: gray;
+}
+.sec04-left-article p,
+.main-sec05 p {
+  font-family: theinhardt;
+  font-size: 2rem;
+  line-height: 1.6em;
+  color: gray;
+}
+.main-sec04 img {
+  width: 40vw;
+}
+
+/* ------------------------------- main-sec05 ------------------------------- */
+
+.main-sec05 {
+  margin: 0rem 15rem 15rem 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30rem;
+  border-bottom: 1px solid gray;
+}
+.main-sec05 > p {
+  width: 50vw;
+  text-align: center;
+  margin: 5rem auto 10rem auto;
+}
+.sec-05-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 30vh;
+  background-image: url("../imgs/28.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sec-05-article div {
+  /* outline: 2px solid red; */
+  align-self: flex-end;
+  display: flex;
+  width: 68vw;
+  margin-right: 15rem;
+  margin-bottom: -17rem;
+}
+.sec-05-article div > img {
+  width: 40vw;
+}
+.sec-05-article div > p {
+  padding-right: 10rem;
+  padding-top: 10rem;
+}
+
+/* --------------------------------- footer --------------------------------- */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 4rem;
+}
+
+footer div {
+  display: flex;
+}
+footer div > img {
+  width: 5vw;
+  height: auto;
+}
+footer div > p {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  font-family: graphik-regular;
+  color: gray;
+}
+footer div > p > span {
+  font-weight: bold;
+  color: black;
+}
+
+/* -------------------------- active class styling -------------------------- */
+.active {
+  background-color: black;
+  color: white;
+}
+.active.nohover {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
