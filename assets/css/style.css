@@ -51,7 +51,7 @@ header .bar3 {
   width: 35px;
   height: 5px;
   margin: 6px 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s linear;
   background-color: black;
 }
 
@@ -99,11 +99,11 @@ header h1 {
 }
 
 #dark-mode-toggle {
+  cursor: pointer;
   font-size: 3rem;
 }
 
 #dark-mode-name {
-  /* outline: 1px solid red; */
   font-size: 1.8rem;
   font-family: tiempos-headline;
 }

@@ -2,7 +2,9 @@ const darkModeToggle = document.querySelector("#dark-mode-toggle");
 const darkModeName = document.querySelector("#dark-mode-name");
 const wrapper = document.querySelector(".wrapper");
 const aTags = document.querySelectorAll(".wrap");
-console.log(aTags);
+
+darkModeToggle.innerHTML = "&#xf205";
+darkModeName.innerHTML = "Dark Mode";
 
 darkModeToggle.addEventListener("click", function () {
   this.classList.toggle("active");
@@ -11,8 +13,10 @@ darkModeToggle.addEventListener("click", function () {
     singleAtag.classList.toggle("active");
     if (darkModeToggle.classList.contains("active")) {
       darkModeName.innerHTML = "Light Mode";
+      darkModeToggle.innerHTML = "&#xf204";
     } else {
       darkModeName.innerHTML = "Dark Mode";
+      darkModeToggle.innerHTML = "&#xf205";
     }
   });
 });
